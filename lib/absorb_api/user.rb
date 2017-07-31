@@ -29,5 +29,11 @@ module AbsorbApi
 
       self
     end
+
+    def enroll course_id
+      post("users/#{id}/enrollments/#{course_id}")
+
+      self
+    end
   end
 end
